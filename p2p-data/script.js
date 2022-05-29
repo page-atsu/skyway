@@ -12,19 +12,7 @@ const Peer = window.Peer;
   const meta = document.getElementById('js-meta');
   const sdkSrc = document.querySelector('script[src*=skyway]');
   
-  let i = 1;
-  while(i <= 10){
-    console.log(i);
-    i = i + 2;
-  }
-  let HOST = location.origin.replace(/^http/, 'ws')
-  let ws = new WebSocket(HOST);
-  let el;
-  let tmp_data = 1000;
-  
-  ws.onmessage = function (event) {
-    console.log('ok_ws');
-  };
+
   
   meta.innerText = `
     UA: ${navigator.userAgent}
