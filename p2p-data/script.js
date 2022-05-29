@@ -17,6 +17,10 @@ const Peer = window.Peer;
     console.log(i);
     i = i + 2;
   }
+  let HOST = location.origin.replace(/^http/, 'ws')
+  let ws = new WebSocket(HOST);
+  let el;
+  let tmp_data = 1000;
   
   meta.innerText = `
     UA: ${navigator.userAgent}
