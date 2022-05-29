@@ -13,8 +13,8 @@ const Peer = window.Peer;
   const sdkSrc = document.querySelector('script[src*=skyway]');
   
   const now = new Date();
-  const millisec =  now.getMilliseconds();
-  console.log(millisec);
+  const year =  now.year();
+  console.log(year);
   
   meta.innerText = `
     UA: ${navigator.userAgent}
