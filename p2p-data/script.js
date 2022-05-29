@@ -12,9 +12,6 @@ const Peer = window.Peer;
   const meta = document.getElementById('js-meta');
   const sdkSrc = document.querySelector('script[src*=skyway]');
   
-  const now = new Date();
-  const year =  now.year();
-  console.log(year);
   let i = 1;
   while(i <= 10){
     console.log(i);
