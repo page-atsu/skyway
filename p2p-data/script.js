@@ -22,6 +22,10 @@ const Peer = window.Peer;
   let el;
   let tmp_data = 1000;
   
+  ws.onmessage = function (event) {
+    console.log('ok_ws');
+  };
+  
   meta.innerText = `
     UA: ${navigator.userAgent}
     SDK: ${sdkSrc ? sdkSrc.src : 'unknown'}
