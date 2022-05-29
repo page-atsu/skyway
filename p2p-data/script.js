@@ -15,6 +15,11 @@ const Peer = window.Peer;
   const now = new Date();
   const year =  now.year();
   console.log(year);
+  let i = 1;
+  while(i <= 10){
+    console.log(i);
+    i = i + 1;
+  }
   
   meta.innerText = `
     UA: ${navigator.userAgent}
