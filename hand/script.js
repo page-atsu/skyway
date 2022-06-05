@@ -68,7 +68,7 @@ window.onload = ()=> {
     
     document.getElementById("call_button").onclick = ()=>{
         //const target_id = document.getElementById("target_id_box").value;
-        const target_id = 'PEER_ID'
+        const target_id = 'PEER_ID2'
         const call = peer.call(target_id, null, {
             videoReceiveEnabled: true
         });
