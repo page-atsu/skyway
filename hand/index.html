@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>遠隔操作パネル</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style type="text/css">
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            line-height:100%;
+        }
+        li {          
+            margin-right: 20px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            /* line-height:10%; */
+        }
+        li:last-of-type {
+            margin-right: 0;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            /* line-height:10%; */
+        }
+        #text-button1a {
+          width: 120px;
+          text-align: center;
+          background-color: #FF0000;
+          margin-top: 0px;
+          margin-bottom: px;
+        }
+        #text-button2a {
+          width: 120px;
+          text-align: center;
+          background-color: #FF0000;
+          margin-top: 0px;
+          margin-bottom: px;
+        }
+        #text-button1b {
+          width: 120px;
+          text-align: center;
+          background-color: #132dec;
+          margin-top: 0px;
+          margin-bottom: px;
+        }
+        #text-button2b {
+          width: 120px;
+          text-align: center;
+          background-color: #132dec;
+          margin-top: 0px;
+          margin-bottom: px;
+        }
+        #text-button3a {
+          width: 120px;
+          text-align: center;
+          background-color: #FF0000;
+        }
+        #text-button4a {
+          width: 120px;
+          text-align: center;
+          background-color: #FF0000;
+        }
+        #text-button3b {
+          width: 120px;
+          text-align: center;
+          background-color: #132dec;
+        }
+        #text-button4b {
+          width: 120px;
+          text-align: center;
+          background-color: #132dec;
+        }
+  
+
+    
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<input type="text" id="target_id_box"></input><button id="call_button">call</button>
+<button id="start_button">start</button>
+<input type="range" id="range" min="0" max="200" step="1" value="5">
+<span id="value">5</span>
+<ul>
+    <li><p id="recv-current-angle1"></p></li>
+    <li><p id="send-target-angle1"></p></li>
+    <li><p id="is-reach1"></p></li>
+  </ul>
+  <ul>   
+    <li><div id="text-button1a"><p id="text">目標値増加</p></div></li>    
+    <li><div id="text-button1b"><p id="text">目標値減少</p></div></li> 
+  </ul>     
+  <ul>
+    <li><p id="recv-current-angle2"></p></li>
+    <li><p id="send-target-angle2"></p></li>
+    <li><p id="is-reach2"></p></li> 
+  </ul>
+  <ul>   
+    <li><div id="text-button2a"><p id="text">目標値増加</p></div></li>    
+    <li><div id="text-button2b"><p id="text">目標値減少</p></div></li> 
+  </ul>
+
+  <ul>
+    <li><p id="recv-current-angle3"></p></li>
+    <li><p id="send-target-angle3"></p></li>
+    <li><p id="is-reach3"></p></li>
+  </ul>
+  <ul>   
+    <li><div id="text-button3a"><p id="text">目標値増加</p></div></li>    
+    <li><div id="text-button3b"><p id="text">目標値減少</p></div></li> 
+  </ul>     
+  <ul>
+    <li><p id="recv-current-angle4"></p></li>
+    <li><p id="send-target-angle4"></p></li>
+    <li><p id="is-reach4"></p></li> 
+  </ul>
+  <ul>   
+    <li><div id="text-button4a"><p id="text">目標値増加</p></div></li>    
+    <li><div id="text-button4b"><p id="text">目標値減少</p></div></li> 
+  </ul>  
+<video id="remote_video" muted="true" autoplay playsinline="true"></video>
+</html>
