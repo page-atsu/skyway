@@ -47,7 +47,7 @@ window.onload = ()=> {
     const key = '39f05a53-160c-4ffd-a468-11cdc3be64ef'
     //peer idもGet Parameterから取る
     //const peer_id = query["peer_id"]
-    const peer_id = 'PEER_ID'
+    const peer_id = 'PEER_ID2'
     const peer = new Peer(peer_id, {
         key: key,
         debug: 3
